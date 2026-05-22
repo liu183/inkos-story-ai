@@ -36,5 +36,8 @@
   },
   "dependencies": {
     "openai": "^4.73.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^5.8.3"
   }
 }
