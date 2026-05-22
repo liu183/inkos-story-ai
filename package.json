@@ -29,6 +29,7 @@
     "verify:publish-manifests": "node scripts/verify-no-workspace-protocol.mjs packages/core packages/cli packages/studio",
     "release": "pnpm build && pnpm test"
   },
+  "packageManager": "pnpm@9.15.0",
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=9.0.0"

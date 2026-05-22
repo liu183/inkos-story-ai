@@ -1,7 +1,6 @@
 {
-  "buildCommand": "npm install --prefix packages/studio && npm run build:client --prefix packages/studio",
+  "buildCommand": "pnpm install --no-frozen-lockfile && cd packages/studio && npx vite build",
   "outputDirectory": "packages/studio/dist",
-  "installCommand": "npm install",
   "framework": "vite",
   "rewrites": [
     { "source": "/api/v1/(.*)", "destination": "/api/index" },
