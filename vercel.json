@@ -1,7 +1,7 @@
 {
-  "buildCommand": "cd packages/studio && npm run build:client",
+  "buildCommand": "npm install --prefix packages/studio && npm run build:client --prefix packages/studio",
   "outputDirectory": "packages/studio/dist",
-  "installCommand": "pnpm install",
+  "installCommand": "npm install",
   "framework": "vite",
   "rewrites": [
     { "source": "/api/v1/(.*)", "destination": "/api/index" },
