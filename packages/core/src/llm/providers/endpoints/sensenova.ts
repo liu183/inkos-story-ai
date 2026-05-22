@@ -20,6 +20,8 @@ export const SENSENOVA: InkosEndpoint = {
   models: [
     { id: "SenseNova-V6-5-Pro", maxOutput: 4096, contextWindowTokens: 131072, enabled: true, releasedAt: "2025-07-23" },
     { id: "SenseNova-V6-5-Turbo", maxOutput: 4096, contextWindowTokens: 131072, enabled: true, releasedAt: "2025-07-23" },
+    { id: "sensenova-6.7-flash-lite", maxOutput: 8192, contextWindowTokens: 131072, enabled: true, releasedAt: "2025-01-01" },
+    { id: "sensenova-u1-fast", maxOutput: 8192, contextWindowTokens: 65536, enabled: true, releasedAt: "2025-01-01" },
     { id: "Qwen3-235B", maxOutput: 4096, contextWindowTokens: 32768, releasedAt: "2025-05-27" },
     { id: "Qwen3-32B", maxOutput: 4096, contextWindowTokens: 32768, releasedAt: "2025-05-27" },
     { id: "SenseNova-V6-Reasoner", maxOutput: 4096, contextWindowTokens: 32768, releasedAt: "2025-04-14" },
@@ -41,5 +43,6 @@ export const SENSENOVA: InkosEndpoint = {
     { id: "DeepSeek-R1", maxOutput: 4096, contextWindowTokens: 32768 },
     { id: "DeepSeek-R1-Distill-Qwen-14B", maxOutput: 4096, contextWindowTokens: 32768 },
     { id: "DeepSeek-R1-Distill-Qwen-32B", maxOutput: 4096, contextWindowTokens: 8192 },
+    { id: "deepseek-v4-flash", maxOutput: 393216, contextWindowTokens: 1_000_000, enabled: true, releasedAt: "2026-04-24" },
   ],
 };

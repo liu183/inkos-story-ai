@@ -46,6 +46,14 @@ export function pickModelSelection(
   selectedModel: string | null,
   selectedService: string | null,
 ): { model: string; service: string } | null {
+  // When no model is selected, prefer deepseek-v4-flash if available
+  if (!selectedModel) {
+    for (const group of groupedModels) {
+      const found = group.models.find((m) => m.id === "deepseek-v4-flash");
+      if (found) return { model: found.id, service: group.service };
+    }
+  }
+
   const selectedStillAvailable = selectedModel && selectedService
     ? groupedModels.some((group) =>
         group.service === selectedService

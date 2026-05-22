@@ -33,6 +33,9 @@
     "node": ">=20.0.0",
     "pnpm": ">=9.0.0"
   },
+  "dependencies": {
+    "openai": "^4.73.0"
+  },
   "pnpm": {
     "overrides": {
       "@mariozechner/pi-ai": "0.67.1",

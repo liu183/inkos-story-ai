@@ -18,6 +18,7 @@ import { WENXIN } from "./endpoints/wenxin.js";
 // B2
 import { SPARK } from "./endpoints/spark.js";
 import { SENSENOVA } from "./endpoints/sensenova.js";
+import { SENSENOVA_PROXY } from "./endpoints/sensenova-proxy.js";
 import { TENCENTCLOUD } from "./endpoints/tencentcloud.js";
 import { XIAOMI_MIMO } from "./endpoints/xiaomimimo.js";
 import { LONGCAT } from "./endpoints/longcat.js";
@@ -55,7 +56,7 @@ export type { InkosEndpoint, InkosModel, ApiProtocol, EndpointGroup } from "./ty
 const ALL_PROVIDERS: readonly InkosEndpoint[] = [
   ANTHROPIC, OPENAI, GOOGLE, DEEPSEEK, MINIMAX,
   MOONSHOT, ZHIPU, SILICONCLOUD, PPIO, BAILIAN, VOLCENGINE, HUNYUAN, BAICHUAN, STEPFUN, WENXIN,
-  SPARK, SENSENOVA, TENCENTCLOUD, XIAOMI_MIMO, LONGCAT, INTERNLM,
+  SPARK, SENSENOVA, SENSENOVA_PROXY, TENCENTCLOUD, XIAOMI_MIMO, LONGCAT, INTERNLM,
   MODELSCOPE, GITEEAI, QINIU, INFINIAI, ZEROONE, AI360,
   OLLAMA, OPENROUTER, CUSTOM, MISTRAL, XAI, NEWAPI, GITHUB_COPILOT,
   // B6 CodingPlan（7 个）

@@ -1,0 +1,18 @@
+{
+  "buildCommand": "cd packages/studio && npm run build:client",
+  "outputDirectory": "packages/studio/dist",
+  "installCommand": "pnpm install",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/api/v1/(.*)", "destination": "/api/index" },
+    { "source": "/api/(.*)", "destination": "/api/index" }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}
